@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { CheckCircle, AlertCircle, Send } from "lucide-react";
+import { CheckCircle, AlertCircle } from "lucide-react";
 import type { ContactFormData } from "@/lib/types";
 
 export default function ContactForm() {
@@ -46,7 +46,7 @@ export default function ContactForm() {
         </p>
         <button
           onClick={() => setStatus("idle")}
-          className="text-primary font-semibold hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+          className="text-gray-900 font-semibold underline hover:text-gray-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
         >
           Send another message
         </button>
@@ -55,7 +55,7 @@ export default function ContactForm() {
   }
 
   const inputClass =
-    "w-full px-4 py-3 rounded-lg border text-gray-900 text-sm placeholder:text-gray-400 bg-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-colors";
+    "w-full px-3 py-2.5 border text-gray-900 text-sm placeholder:text-gray-400 bg-white focus:outline-none focus:border-gray-500 transition-colors";
   const errorInputClass = "border-red-400";
   const normalInputClass = "border-gray-200";
 
@@ -220,7 +220,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full flex items-center justify-center gap-2 bg-primary text-white font-semibold py-4 rounded-lg hover:bg-primary-hover transition-colors disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+        className="bg-gray-900 text-white text-sm font-bold px-8 py-3 hover:bg-black transition-colors disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
         aria-busy={status === "loading"}
       >
         {status === "loading" ? (
@@ -232,10 +232,7 @@ export default function ContactForm() {
             Sending…
           </>
         ) : (
-          <>
-            <Send size={16} aria-hidden="true" />
-            Send Message
-          </>
+          "SUBMIT"
         )}
       </button>
 

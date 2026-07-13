@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import PageHeader from "@/components/ui/PageHeader";
-import ValuesGrid from "@/components/about/ValuesGrid";
-import OfficeLocations from "@/components/about/OfficeLocations";
-import SectionHeading from "@/components/ui/SectionHeading";
-import { VALUES, OFFICES, COMPANY_INFO } from "@/lib/constants";
+import { VALUES, COMPANY_INFO } from "@/lib/constants";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About CDI",
@@ -15,98 +10,64 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <>
-      <PageHeader
-        title="About CDI"
-        subtitle="Premier MEP engineering design and consulting, coast to coast."
-        breadcrumbs={[{ label: "About" }, { label: "CDI" }]}
-      />
+    <div className="pt-[60px] bg-white">
+      <div className="max-w-[960px] mx-auto px-6 py-12">
 
-      {/* Mission section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-[1200px] mx-auto px-[30px]">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block text-sm font-semibold tracking-widest uppercase text-primary mb-4">
-              Who We Are
-            </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              A Premier Destination for{" "}
-              <span className="text-primary">MEP Engineering</span>
-            </h2>
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              {COMPANY_INFO.mission}
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Whether your project is a downtown commercial tower, a residential
-              development, a cannabis cultivation facility, or a utility-scale
-              photovoltaic installation, CDI Engineering delivers precision engineering
-              solutions on time and within budget — regardless of project location.
-            </p>
-          </div>
-        </div>
-      </section>
+        {/* About Us */}
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">About Us</h2>
+        <p className="text-gray-700 text-sm leading-relaxed max-w-3xl">
+          Welcome to Circa Domini International, Inc. (CDI), your premier destination for cutting-edge MEP design solutions
+          across the United States and beyond. With offices strategically located in Irvine, California, Edison, New Jersey,
+          and Ho Chi Minh City, Vietnam, we bring unparalleled expertise and innovation to projects worldwide.
+        </p>
 
-      {/* Values section */}
-      <section className="py-16 md:py-24 bg-page-bg">
-        <div className="max-w-[1200px] mx-auto px-[30px]">
-          <SectionHeading
-            label="Our Foundation"
-            title={
-              <>
-                Six Core <span className="text-primary">Values</span>
-              </>
-            }
-            subtitle="Every engagement is guided by principles that ensure exceptional outcomes for our clients."
-            className="mb-12"
-          />
-          <ValuesGrid values={VALUES} />
-        </div>
-      </section>
-
-      {/* Offices section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-[1200px] mx-auto px-[30px]">
-          <SectionHeading
-            label="Our Presence"
-            title={
-              <>
-                Three Offices, <span className="text-primary">One Standard</span>
-              </>
-            }
-            subtitle="Strategically located to serve clients coast to coast and internationally."
-            className="mb-12"
-          />
-          <OfficeLocations offices={OFFICES} />
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-16 bg-dark">
-        <div className="max-w-[1200px] mx-auto px-[30px] text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Start Working With CDI Today
-          </h2>
-          <p className="text-white/70 mb-8 max-w-xl mx-auto">
-            Reach out to discuss your project requirements. Our licensed engineers are
-            ready to deliver.
+        <div className="mt-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Value</h2>
+          <p className="text-gray-700 text-sm leading-relaxed max-w-3xl">
+            At CDI, we embody a commitment to excellence that transcends geographical boundaries. Our core values of{" "}
+            <strong>Responsiveness</strong>, <strong>Accurate speed delivery</strong>,{" "}
+            <strong>Proactive value-driven</strong> approaches, <strong>Technical</strong> expertise,{" "}
+            <strong>Standardization</strong>, and <strong>Continuous improvement</strong> drive every aspect of our
+            operations, ensuring exceptional results regardless of location.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-primary text-white font-semibold px-8 py-3.5 rounded hover:bg-primary-hover transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-            >
-              Contact Us
-              <ArrowRight size={17} aria-hidden="true" />
-            </Link>
-            <Link
-              href="/our-process"
-              className="inline-flex items-center gap-2 bg-transparent text-white font-semibold px-8 py-3.5 rounded border-2 border-white/30 hover:border-white/60 hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-            >
-              Our Process
-            </Link>
-          </div>
         </div>
-      </section>
-    </>
+
+        {/* Values list */}
+        <div className="mt-10">
+          {VALUES.map((value, i) => (
+            <div key={value.title}>
+              <hr className="border-gray-200 my-6 w-20 mx-auto" />
+              <h3 className="text-sm font-bold text-gray-900 mb-3">{value.title}</h3>
+              <p className="text-gray-700 text-sm leading-relaxed max-w-3xl">{value.description}</p>
+            </div>
+          ))}
+          <hr className="border-gray-200 my-6 w-20 mx-auto" />
+        </div>
+
+        {/* Closing paragraph */}
+        <p className="text-gray-700 text-sm leading-relaxed max-w-3xl mt-4">
+          Experience the CDI difference for yourself. Partner with us for MEP design solutions that are responsive,
+          accurate, proactive, technical, standardized, and continuously improving, no matter where your project is
+          located. Let us bring your vision to life, wherever you are in the United States or beyond.
+        </p>
+
+        {/* Buttons */}
+        <div className="mt-16 mb-8 flex flex-wrap justify-center gap-3">
+          <Link
+            href="/our-process"
+            className="inline-block bg-gray-900 text-white text-sm font-semibold px-6 py-3 hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
+          >
+            Learn about Our Process
+          </Link>
+          <Link
+            href="/contact"
+            className="inline-block border border-gray-900 text-gray-900 text-sm font-semibold px-6 py-3 hover:bg-gray-900 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
+          >
+            Get FREE Quote Now
+          </Link>
+        </div>
+
+      </div>
+    </div>
   );
 }

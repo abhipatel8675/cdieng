@@ -80,7 +80,7 @@ export default function RootLayout({
         <Navbar />
 
         <main
-          className="flex-1 pt-[70px] md:pt-[102px]"
+          className="flex-1"
           id="main-content"
           tabIndex={-1}
         >

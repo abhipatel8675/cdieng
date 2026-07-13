@@ -1,89 +1,49 @@
 import type { Metadata } from "next";
-import PageHeader from "@/components/ui/PageHeader";
 import ProcessSteps from "@/components/process/ProcessSteps";
 import DifferentiatorSection from "@/components/process/DifferentiatorSection";
-import SectionHeading from "@/components/ui/SectionHeading";
 import { PROCESS_STEPS, DIFFERENTIATORS } from "@/lib/constants";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Process",
   description:
-    "Learn how CDI Engineering delivers fast, accurate, and responsive MEP engineering through our proven 5-step process and 20-hour operational model.",
+    "Learn how CDI Engineering delivers fast, accurate, and responsive MEP engineering through our proven 5-step process.",
 };
 
 export default function OurProcessPage() {
   return (
-    <>
-      <PageHeader
-        title="Our Process"
-        subtitle="Efficient project execution in five steps — faster, more accurate, and always responsive."
-        breadcrumbs={[{ label: "About", href: "/cdi" }, { label: "Our Process" }]}
-      />
+    <div className="pt-[60px] bg-white">
+      <div className="max-w-[960px] mx-auto px-6 py-12">
+        <h1 className="text-3xl font-bold text-gray-900 mb-6">Our Process</h1>
 
-      {/* Process steps */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-[1200px] mx-auto px-[30px]">
-          <SectionHeading
-            label="How We Work"
-            title={
-              <>
-                Efficient Project Execution{" "}
-                <span className="text-primary">in Five Steps</span>
-              </>
-            }
-            subtitle="Every project follows our proven methodology — from initial consultation to final delivery."
-            className="mb-16"
-          />
-          <ProcessSteps steps={PROCESS_STEPS} />
-        </div>
-      </section>
+        <p className="text-gray-700 text-sm leading-relaxed mb-10 max-w-3xl">
+          At Circa Domini International, Inc. (CDI), excellence isn&apos;t just a goal—it&apos;s our standard. Our
+          streamlined project process sets us apart from the competitors, ensuring unparalleled efficiency, accuracy,
+          and client satisfaction.
+        </p>
 
-      {/* Differentiators */}
-      <section className="py-16 md:py-24 bg-page-bg">
-        <div className="max-w-[1200px] mx-auto px-[30px]">
-          <SectionHeading
-            label="What Sets Us Apart"
-            title={
-              <>
-                The CDI <span className="text-primary">Advantage</span>
-              </>
-            }
-            subtitle="Three pillars that make CDI Engineering the trusted choice for MEP projects."
-            className="mb-16"
-          />
+        <ProcessSteps steps={PROCESS_STEPS} />
+
+        <div className="mt-16">
           <DifferentiatorSection differentiators={DIFFERENTIATORS} />
         </div>
-      </section>
 
-      {/* CTA */}
-      <section className="py-16 bg-primary">
-        <div className="max-w-[1200px] mx-auto px-[30px] text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Experience the CDI Difference
-          </h2>
-          <p className="text-white/80 mb-8 max-w-xl mx-auto">
-            Put our process to work on your next project. Get a free quote from our
-            licensed MEP engineers today.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-white text-primary font-bold px-8 py-3.5 rounded hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
-            >
-              Get FREE Quote Now
-              <ArrowRight size={17} aria-hidden="true" />
-            </Link>
-            <Link
-              href="/cdi"
-              className="inline-flex items-center gap-2 bg-transparent text-white font-semibold px-8 py-3.5 rounded border-2 border-white/50 hover:border-white hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-            >
-              Learn About CDI
-            </Link>
-          </div>
+        {/* Buttons */}
+        <div className="mt-16 mb-8 flex flex-wrap gap-3">
+          <Link
+            href="/cdi"
+            className="inline-block bg-gray-900 text-white text-sm font-semibold px-6 py-3 hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
+          >
+            Learn About CDI
+          </Link>
+          <Link
+            href="/contact"
+            className="inline-block border border-gray-900 text-gray-900 text-sm font-semibold px-6 py-3 hover:bg-gray-900 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
+          >
+            Get FREE Quote Now
+          </Link>
         </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }

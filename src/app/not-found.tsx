@@ -24,7 +24,7 @@ export default function NotFound() {
           <span
             className="text-[160px] md:text-[200px] font-bold leading-none select-none"
             style={{
-              background: "linear-gradient(135deg, #2563a8 0%, #1a3d75 100%)",
+              background: "linear-gradient(135deg, #0bb4aa 0%, #08857d 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",

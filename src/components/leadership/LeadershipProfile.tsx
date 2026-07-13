@@ -1,115 +1,55 @@
-"use client";
-
-import { useInView } from "react-intersection-observer";
-import { Award, GraduationCap, Briefcase } from "lucide-react";
-
-interface Credential {
-  icon: React.ElementType;
-  label: string;
-  value: string;
-}
-
-const credentials: Credential[] = [
-  { icon: Award, label: "License", value: "CA PE#M 37036" },
-  {
-    icon: GraduationCap,
-    label: "Education",
-    value: "BS & MS Mechanical Engineering — MIT",
-  },
-  { icon: GraduationCap, label: "Business", value: "MBA — UCLA Anderson School" },
-  {
-    icon: Briefcase,
-    label: "Prior Roles",
-    value: "B/E Aerospace · Honeywell International",
-  },
-];
-
 export default function LeadershipProfile() {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
-
   return (
-    <div
-      ref={ref}
-      className={`grid grid-cols-1 lg:grid-cols-2 gap-14 items-center transition-all duration-700 ${
-        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
-    >
-      {/* Photo column */}
-      <div className="flex justify-center lg:justify-start">
-        <div className="relative">
-          {/* Avatar placeholder */}
-          <div
-            className="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden relative"
-            style={{
-              background: "linear-gradient(135deg, #0d2240 0%, #2563a8 100%)",
-            }}
-          >
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
-              <div className="w-24 h-24 rounded-full bg-white/20 border-4 border-white/30 flex items-center justify-center mb-4">
-                <span className="text-4xl font-bold">DK</span>
-              </div>
-              <p className="text-sm text-white/70">Profile Photo</p>
-            </div>
-          </div>
-
-          {/* Decorative badge */}
-          <div className="absolute -bottom-4 -right-4 bg-primary text-white rounded-xl px-5 py-3 shadow-xl">
-            <div className="text-xs font-semibold uppercase tracking-wide">Licensed PE</div>
-            <div className="text-lg font-bold">CA#M 37036</div>
-          </div>
+    <div>
+      {/* Name/photo row */}
+      <div className="flex items-start gap-6 mb-8">
+        {/* Round photo placeholder */}
+        <div
+          className="w-28 h-28 rounded-full bg-gray-200 border border-gray-300 flex items-center justify-center shrink-0 overflow-hidden"
+          role="img"
+          aria-label="David Kang profile photo"
+        >
+          <span className="text-2xl font-bold text-gray-500">DK</span>
+        </div>
+        <div className="pt-2">
+          <h2 className="text-2xl font-bold text-gray-900">David Kang, PE</h2>
+          <p className="italic text-gray-600 text-sm mt-1">President &amp; Chief Executive Officer</p>
         </div>
       </div>
 
-      {/* Bio column */}
-      <div>
-        <span className="inline-block text-sm font-semibold tracking-widest uppercase text-primary mb-3">
-          Our Leadership
-        </span>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-1">
-          David Kang, PE
-        </h2>
-        <p className="text-primary font-semibold text-lg mb-5">
-          President & Chief Executive Officer
+      {/* Bio */}
+      <div className="space-y-4 text-gray-700 text-sm leading-relaxed max-w-3xl">
+        <p>
+          At Circa Domini International Inc., we are privileged to be led by David Kang, an esteemed professional
+          whose career embodies excellence in engineering, management, and executive leadership. Armed with a
+          Bachelor&apos;s and Master&apos;s in Mechanical Engineering from MIT, and an MBA from UCLA, David Kang, our
+          Principal and Professional Engineer (CA PE#M 37036), possesses a robust academic foundation complemented
+          by extensive hands-on experience across diverse industries.
         </p>
-
-        <p className="text-gray-600 leading-relaxed mb-5">
-          David Kang leads CDI Engineering with extensive experience spanning aerospace
-          and industrial sectors. His career includes strategic leadership roles at{" "}
-          <strong className="text-gray-800">B/E Aerospace</strong> and{" "}
-          <strong className="text-gray-800">Honeywell International</strong>, where he
-          managed multi-billion dollar operations and drove significant organizational
-          transformations.
+        <p>
+          As an accomplished leader and engineer, David Kang has consistently delivered outstanding results throughout
+          his career. His expertise in strategic planning, design-to-cost initiatives, and new business development
+          has been pivotal in driving growth and success.
         </p>
-
-        <p className="text-gray-600 leading-relaxed mb-8">
-          David brings a track record of excellence in strategic planning, design-to-cost
-          initiatives, and new business development. Under his leadership, CDI has grown
-          to serve clients coast-to-coast and internationally with an unwavering
-          commitment to precision and client satisfaction.
+        <p>
+          Before assuming leadership at Circa Domini International Inc., David Kang&apos;s journey included
+          transformative roles at renowned organizations. He served as Vice President and General Manager at B/E
+          Aerospace, orchestrating a remarkable turnaround from an $80 million sales operation to a process-oriented
+          and metrics-driven organization.
         </p>
-
-        {/* Credentials */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {credentials.map((cred) => {
-            const IconComponent = cred.icon;
-            return (
-              <div
-                key={cred.value}
-                className="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100"
-              >
-                <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                  <IconComponent size={15} className="text-primary" aria-hidden="true" />
-                </div>
-                <div>
-                  <p className="text-xs text-gray-500 font-medium uppercase tracking-wide">
-                    {cred.label}
-                  </p>
-                  <p className="text-sm text-gray-800 font-medium mt-0.5">{cred.value}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <p>
+          Before his tenure at B/E Aerospace, David held key positions at Honeywell International, where he played
+          pivotal roles in shaping the company&apos;s aerospace division. As Director of Strategy for Honeywell Engines
+          Integrated Supply Chain, he spearheaded strategic planning initiatives and led the implementation of key
+          initiatives across a global network of sites, contributing to the division&apos;s $5 billion annual revenue.
+        </p>
+        <p>
+          David Kang&apos;s academic journey is marked by excellence, with both a Bachelor and Master of Science in
+          Mechanical Engineering from MIT and a Master of Business Administration (MBA) with a focus on Marketing &amp;
+          Finance from UCLA. These academic achievements underscore his commitment to continuous learning and
+          professional development, serving as a strong foundation for his leadership in the field of engineering
+          and management.
+        </p>
       </div>
     </div>
   );
