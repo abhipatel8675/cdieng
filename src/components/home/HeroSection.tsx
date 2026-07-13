@@ -41,16 +41,14 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0 bg-black/55" aria-hidden="true" />
 
       {/* Main content — left aligned, vertically centered */}
-      <div className="relative z-10 flex-1 flex flex-col justify-center max-w-[1200px] w-full mx-auto px-6 pt-[60px]">
-        <div className="max-w-4xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-wide uppercase mb-6">
-            {COMPANY_INFO.name.toUpperCase()}
-          </h1>
-          <hr className="border-white/40 mb-6 w-72" />
-          <p className="text-white/75 text-base md:text-lg">
-            {COMPANY_INFO.tagline}
-          </p>
-        </div>
+      <div className="relative z-10 flex-1 flex flex-col justify-center items-center w-full px-6 pt-[60px] text-center">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight tracking-wide uppercase mb-6">
+          {COMPANY_INFO.name.toUpperCase()}
+        </h1>
+        <hr className="border-white/40 mb-6 w-72" />
+        <p className="text-white/75 text-base md:text-lg">
+          {COMPANY_INFO.tagline}
+        </p>
       </div>
 
       {/* Video control — bottom right */}
