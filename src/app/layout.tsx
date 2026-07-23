@@ -18,38 +18,38 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cdieng.com"),
+  metadataBase: new URL("https://tianchendevelopment.com"),
   title: {
     default: `${COMPANY_INFO.shortName} — ${COMPANY_INFO.tagline}`,
     template: `%s | ${COMPANY_INFO.shortName}`,
   },
   description:
-    "Circa Domini International Inc. is an Irvine, CA-based MEP engineering design and consulting firm delivering mechanical, electrical, and plumbing solutions coast to coast since 2010.",
+    "Tian Chen Development Group is a Southern California-based integrated real estate development firm delivering feasibility, design, entitlements, and construction under one accountable team.",
   keywords: [
-    "MEP engineering",
-    "mechanical engineering",
-    "electrical engineering",
-    "plumbing engineering",
-    "Irvine California",
-    "CDI Engineering",
-    "HVAC design",
-    "photovoltaic design",
-    "cannabis MEP",
-    "commercial engineering",
+    "real estate development",
+    "integrated development",
+    "site feasibility",
+    "entitlements",
+    "construction management",
+    "Southern California real estate",
+    "City of Industry CA",
+    "residential development",
+    "commercial development",
+    "mixed-use development",
   ],
   openGraph: {
     type: "website",
     siteName: COMPANY_INFO.shortName,
     title: `${COMPANY_INFO.shortName} — ${COMPANY_INFO.tagline}`,
     description:
-      "Irvine, CA-based MEP engineering design and consulting firm. Fast, affordable, and reliable mechanical, electrical, and plumbing engineering services.",
+      "Southern California-based integrated real estate development firm carrying projects from acquisition through occupancy.",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: `${COMPANY_INFO.shortName} — ${COMPANY_INFO.tagline}`,
     description:
-      "Irvine, CA-based MEP engineering design and consulting firm delivering results coast to coast.",
+      "Southern California-based integrated real estate development firm — feasibility, design, entitlements, and construction under one team.",
   },
   robots: {
     index: true,

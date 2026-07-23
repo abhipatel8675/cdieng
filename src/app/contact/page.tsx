@@ -5,7 +5,7 @@ import { COMPANY_INFO } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with CDI Engineering. Request a free MEP engineering quote or reach our offices in Irvine CA, Edison NJ, or Ho Chi Minh City Vietnam.",
+    "Have a site, a building, or an idea? Get in touch with Tian Chen Development Group in City of Industry, CA.",
 };
 
 export default function ContactPage() {
@@ -13,18 +13,21 @@ export default function ContactPage() {
     <div className="pt-[60px] bg-white">
       <div className="max-w-[960px] mx-auto px-6 py-12">
 
-        <h1 className="text-3xl font-bold text-gray-900 mb-10">Contact</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">Contact</h1>
+        <p className="text-gray-600 text-sm mb-10 max-w-2xl">
+          Have a site, a building, or an idea? Tell us what you&apos;re working with, and we&apos;ll tell you
+          honestly whether it pencils — and what it would take to build it.
+        </p>
 
         {/* Find us */}
         <h2 className="text-xl font-bold text-gray-900 mb-6">Find us</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Address */}
           <div className="flex flex-col justify-center">
-            <p className="text-gray-700 text-sm mb-1">
-              9890 Research Dr. Suite 100, Irvine, CA 92618
-            </p>
-            <p className="text-gray-700 text-sm">
-              {COMPANY_INFO.phone} | {COMPANY_INFO.email}
+            <p className="text-gray-700 text-sm mb-1">Tian Chen Development Group</p>
+            <p className="text-gray-700 text-sm mb-1">{COMPANY_INFO.address}</p>
+            <p className="text-gray-500 text-sm mt-2">
+              Phone: {COMPANY_INFO.phone || "TBD"} | Email: {COMPANY_INFO.email || "TBD"}
             </p>
           </div>
           {/* Map placeholder */}
@@ -33,7 +36,7 @@ export default function ContactPage() {
             aria-label="Office location map"
             role="img"
           >
-            <p className="text-gray-400 text-sm">Map — 9890 Research Dr, Irvine CA</p>
+            <p className="text-gray-400 text-sm">Map — {COMPANY_INFO.address}</p>
           </div>
         </div>
 

@@ -9,7 +9,7 @@ export default function ServicesPreview() {
       {/* Background image with overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/images/services-electrical.jpg')" }}
+        style={{ backgroundImage: "url('/images/services-construction.jpg')" }}
         aria-hidden="true"
       />
       <div className="absolute inset-0 bg-black/65" aria-hidden="true" />
@@ -23,11 +23,11 @@ export default function ServicesPreview() {
           Discover Our Services
         </h2>
         <p className="text-white/70 text-sm max-w-xl mb-8 leading-relaxed">
-          Explore our expertise in MEP design and construction solutions, and learn how we can enhance your project outcomes.
+          From feasibility to delivery — explore how we carry projects the entire distance under one accountable team.
         </p>
         <div className="flex flex-wrap gap-3">
           <Link
-            href="/cdi"
+            href="/company"
             className="inline-block border border-white text-white text-xs font-semibold tracking-widest uppercase px-6 py-3 hover:bg-white hover:text-gray-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
             Learn About Us

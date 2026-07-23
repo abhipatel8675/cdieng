@@ -5,14 +5,18 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Browse CDI Engineering's portfolio of MEP projects including commercial, residential, cannabis, industrial, and photovoltaic installations.",
+    "Tian Chen Development Group develops across sectors — commercial, residential & ADU, mixed-use & adaptive reuse, industrial, hospitality & retail, and land development.",
 };
 
 export default function ProjectsPage() {
   return (
     <div className="pt-[60px] bg-white">
       <div className="max-w-[960px] mx-auto px-6 py-12">
-        <h1 className="text-3xl font-bold text-gray-900 mb-10">Projects</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Projects</h1>
+        <p className="text-gray-600 text-sm mb-10 max-w-2xl">
+          We develop across sectors, applying the same end-to-end process whether the project is ground-up, a
+          conversion, or a repositioning.
+        </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {PROJECT_CATEGORIES.map((cat) => (

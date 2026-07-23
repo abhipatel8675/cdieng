@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "CDI Engineering provides expert mechanical, electrical, and plumbing engineering services for commercial, residential, industrial, and specialty projects.",
+    "Tian Chen Development Group carries projects through feasibility, design, entitlements, construction, and delivery — one accountable team, start to finish.",
 };
 
 export default function ServicesPage() {
@@ -20,16 +20,16 @@ export default function ServicesPage() {
         {/* Bottom buttons */}
         <div className="mt-8 flex flex-wrap gap-3">
           <Link
-            href="/cdi"
+            href="/company"
             className="inline-block bg-gray-900 text-white text-sm font-semibold px-6 py-3 hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
           >
-            Learn About CDI
+            Learn About Us
           </Link>
           <Link
             href="/contact"
             className="inline-block border border-gray-900 text-gray-900 text-sm font-semibold px-6 py-3 hover:bg-gray-900 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
           >
-            Get FREE Quote Now
+            Talk to Us
           </Link>
         </div>
       </div>

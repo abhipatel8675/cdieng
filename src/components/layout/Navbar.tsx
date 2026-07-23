@@ -70,9 +70,9 @@ export default function Navbar() {
         <Link
           href="/"
           className="text-white font-bold text-base tracking-wider focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white rounded"
-          aria-label="CDI Engineering — Home"
+          aria-label="Tian Chen Development Group — Home"
         >
-          CDI ENGINEERING
+          TIAN CHEN DEVELOPMENT GROUP
         </Link>
 
         {/* Desktop nav */}

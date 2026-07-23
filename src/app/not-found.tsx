@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "About CDI", href: "/cdi" },
+  { label: "About Us", href: "/company" },
   { label: "Projects", href: "/projects" },
   { label: "Contact Us", href: "/contact" },
 ];

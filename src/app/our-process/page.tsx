@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Our Process",
   description:
-    "Learn how CDI Engineering delivers fast, accurate, and responsive MEP engineering through our proven 5-step process.",
+    "One continuous pipeline, not a chain of vendors. See how Tian Chen Development Group moves a project through discovery, design, entitlement, construction, and delivery.",
 };
 
 export default function OurProcessPage() {
@@ -17,9 +17,9 @@ export default function OurProcessPage() {
         <h1 className="text-3xl font-bold text-gray-900 mb-6">Our Process</h1>
 
         <p className="text-gray-700 text-sm leading-relaxed mb-10 max-w-3xl">
-          At Circa Domini International, Inc. (CDI), excellence isn&apos;t just a goal—it&apos;s our standard. Our
-          streamlined project process sets us apart from the competitors, ensuring unparalleled efficiency, accuracy,
-          and client satisfaction.
+          One continuous pipeline, not a chain of vendors. Here is how a project moves through our team, phase
+          by phase. Because one team stays with the project the whole way, decisions made in Discovery are
+          honored in Build, and nothing is lost in translation.
         </p>
 
         <ProcessSteps steps={PROCESS_STEPS} />
@@ -31,16 +31,16 @@ export default function OurProcessPage() {
         {/* Buttons */}
         <div className="mt-16 mb-8 flex flex-wrap gap-3">
           <Link
-            href="/cdi"
+            href="/company"
             className="inline-block bg-gray-900 text-white text-sm font-semibold px-6 py-3 hover:bg-black transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
           >
-            Learn About CDI
+            Learn About Us
           </Link>
           <Link
             href="/contact"
             className="inline-block border border-gray-900 text-gray-900 text-sm font-semibold px-6 py-3 hover:bg-gray-900 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900"
           >
-            Get FREE Quote Now
+            Talk to Us
           </Link>
         </div>
       </div>

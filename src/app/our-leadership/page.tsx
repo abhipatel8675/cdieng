@@ -4,7 +4,7 @@ import LeadershipProfile from "@/components/leadership/LeadershipProfile";
 export const metadata: Metadata = {
   title: "Our Leadership",
   description:
-    "Meet David Kang, PE — President & CEO of CDI Engineering.",
+    "Tian Chen Development Group is led by a team that has taken projects from land to lease-up across design, entitlement, and construction.",
 };
 
 export default function LeadershipPage() {

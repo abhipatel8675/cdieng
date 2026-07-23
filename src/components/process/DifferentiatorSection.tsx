@@ -1,24 +1,24 @@
 "use client";
 
 import { useInView } from "react-intersection-observer";
-import { Clock, Users, Shield } from "lucide-react";
+import { Users, Building2, ShieldCheck } from "lucide-react";
 import type { Differentiator } from "@/lib/types";
 
 const icons: Record<string, React.ElementType> = {
-  speed: Clock,
-  responsiveness: Users,
-  accuracy: Shield,
+  "one-team": Users,
+  "under-one-roof": Building2,
+  accountable: ShieldCheck,
 };
 
 const accentColors: Record<string, string> = {
-  speed: "#1e3a5f",
-  responsiveness: "#1a3d1a",
-  accuracy: "#0d2e2e",
+  "one-team": "#1e3a5f",
+  "under-one-roof": "#1a3d1a",
+  accountable: "#0d2e2e",
 };
 
 function DifferentiatorItem({ diff }: { diff: Differentiator }) {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
-  const IconComponent = icons[diff.id] ?? Clock;
+  const IconComponent = icons[diff.id] ?? Users;
   const isRight = diff.imagePosition === "right";
 
   return (

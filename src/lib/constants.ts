@@ -4,9 +4,9 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Services", href: "/services" },
   {
     label: "About",
-    href: "/cdi",
+    href: "/company",
     children: [
-      { label: "CDI", href: "/cdi" },
+      { label: "Company", href: "/company" },
       { label: "Our Leadership", href: "/our-leadership" },
       { label: "Our Process", href: "/our-process" },
     ],
@@ -16,114 +16,122 @@ export const NAV_ITEMS: NavItem[] = [
     href: "/projects",
     children: [
       { label: "Commercial", href: "/projects/commercial" },
-      { label: "Residential / ADU", href: "/projects/residential" },
-      { label: "Cannabis", href: "/projects/cannabis" },
+      { label: "Residential & ADU", href: "/projects/residential" },
+      { label: "Mixed-Use & Adaptive Reuse", href: "/projects/mixed-use" },
       { label: "Industrial", href: "/projects/industrial" },
-      { label: "Photovoltaic", href: "/projects/photovoltaic" },
+      { label: "Hospitality & Retail", href: "/projects/hospitality" },
+      { label: "Land Development", href: "/projects/land" },
     ],
   },
   { label: "Clients", href: "/clients" },
   { label: "Contact", href: "/contact" },
 ];
 
-export const STATS: Stat[] = [
-  { value: 3000, suffix: "+", label: "Projects Completed" },
-  { value: 120, suffix: "+", label: "Business Partners" },
-  { value: 250, suffix: "+", label: "Cities Covered" },
-];
+// Retained for future use once real performance figures are available. Not currently rendered.
+export const STATS: Stat[] = [];
 
 export const SERVICES: Service[] = [
   {
-    id: "mechanical",
-    title: "Mechanical",
+    id: "site-selection",
+    title: "Site Selection & Feasibility",
     description:
-      "Enhancing comfort within buildings, particularly through efficient heating and cooling systems tailored to each project's unique requirements.",
+      "Every project begins with proving it works. We evaluate the land, the market, and the numbers before any capital is committed, giving you a clear picture of what a site can become and what it will return.",
     bullets: [
-      "HVAC Design & Engineering",
-      "Renovation & Replacement Systems",
-      "LEED Project Design",
-      "Chilled Water System Analysis",
-      "Central Utility Plant Design",
-      "Energy Compliance Calculations",
-      "System Troubleshooting",
-      "Title 24 Compliance",
+      "Site identification and acquisition support",
+      "Market and financial feasibility analysis",
+      "Development pro forma modeling",
+      "Highest-and-best-use and zoning analysis",
+      "Due diligence, title, and environmental review",
+      "Capital structuring and investment coordination",
     ],
-    image: "/images/services-mechanical.jpg",
-    icon: "thermometer",
+    image: "/images/services-feasibility.jpg",
+    icon: "site-selection",
   },
   {
-    id: "electrical",
-    title: "Electrical",
+    id: "design-planning",
+    title: "Design & Planning",
     description:
-      "Powering devices and maintaining lighting with architectural lighting designs meticulously crafted to harmonize aesthetics with functionality.",
+      "Great buildings start with buildable drawings. Our in-house design team coordinates architecture and engineering together, grounding every decision in real cost and schedule from the first sketch.",
     bullets: [
-      "Power Distribution Systems",
-      "Architectural Lighting Design",
-      "Electrical Load Calculations",
-      "Energy Management Systems",
-      "UPS & Generator Systems",
-      "Arc Flash Analysis",
-      "Protective Device Coordination",
-      "Photovoltaic (Solar) Design",
+      "Conceptual and architectural design",
+      "Space planning and unit programming",
+      "Structural, MEP, and civil engineering coordination",
+      "Construction documents and detailing",
+      "Sustainability, Title-24, and LEED compliance",
+      "Cost-informed value engineering",
     ],
-    image: "/images/services-electrical.jpg",
-    icon: "zap",
+    image: "/images/services-design.jpg",
+    icon: "design-planning",
   },
   {
-    id: "plumbing",
-    title: "Plumbing",
+    id: "entitlements-permitting",
+    title: "Entitlements & Permitting",
     description:
-      "Ensuring access to clean water and safe wastewater disposal is fundamental to human habitation, and our team delivers both with precision.",
+      "Approvals are where most projects stall. We manage the agencies, hearings, and paperwork so your schedule keeps its shape and your project stays on track.",
     bullets: [
-      "Hot & Cold Water Distribution",
-      "Water Treatment Systems",
-      "Sanitary & Vent Systems",
-      "Grease Management",
-      "Roof Drainage Design",
-      "Natural Gas Piping",
-      "Compressed Air Systems",
-      "Backflow Prevention",
+      "Zoning and land-use approvals",
+      "Conditional use permits and variances",
+      "CEQA and environmental review",
+      "Plan check and permit expediting",
+      "Agency and jurisdiction coordination",
+      "Community and stakeholder engagement",
     ],
-    image: "/images/services-plumbing.jpg",
-    icon: "droplets",
+    image: "/images/services-entitlements.jpg",
+    icon: "entitlements",
+  },
+  {
+    id: "construction",
+    title: "Construction",
+    description:
+      "We build what we design. With one team from concept through the field, budgets stay honest and problems get solved on-site instead of in a claim.",
+    bullets: [
+      "General contracting and construction management",
+      "Budget development, buyout, and cost control",
+      "Master scheduling and trade sequencing",
+      "Subcontractor procurement and management",
+      "Quality assurance and site safety",
+      "Owner reporting and change management",
+    ],
+    image: "/images/services-construction.jpg",
+    icon: "construction",
+  },
+  {
+    id: "project-delivery",
+    title: "Project Delivery",
+    description:
+      "A finished building should be ready to open. We close out the work cleanly and stay available for the tenant improvements and asset decisions that follow.",
+    bullets: [
+      "Commissioning and systems startup",
+      "Closeout, warranties, and as-built documentation",
+      "Certificate of occupancy and owner turnover",
+      "Tenant improvements and fit-out",
+      "Property and asset management support",
+      "Post-occupancy and warranty service",
+    ],
+    image: "/images/services-delivery.jpg",
+    icon: "delivery",
   },
 ];
 
 export const VALUES: Value[] = [
   {
-    title: "Responsiveness",
-    description:
-      "We provide prompt reactions to client needs across all locations, ensuring no request goes unanswered.",
-    icon: "zap",
-  },
-  {
-    title: "Accurate Speed Delivery",
-    description:
-      "We combine precision with timely project completion — because quality and speed are not mutually exclusive.",
-    icon: "timer",
-  },
-  {
-    title: "Proactive Value-Driven",
-    description:
-      "We anticipate problems before they arise and deliver solutions that maximize value within your budget.",
+    title: "Accountability",
+    description: "One team, one number to call, one owner of the result.",
     icon: "target",
   },
   {
-    title: "Technical Expertise",
-    description:
-      "Engineering excellence achieved through current tools, methodologies, and industry-leading professionals.",
-    icon: "cpu",
-  },
-  {
-    title: "Standardization",
-    description:
-      "Consistency through adherence to industry best practices, ensuring reliable outcomes on every project.",
+    title: "Cost Honesty",
+    description: "Real pricing informs the design from day one.",
     icon: "check-square",
   },
   {
-    title: "Continuous Improvement",
-    description:
-      "Ongoing refinement of our processes and methodologies keeps us at the forefront of MEP engineering.",
+    title: "Quality",
+    description: "Buildings meant to perform and last, not just to open.",
+    icon: "cpu",
+  },
+  {
+    title: "Partnership",
+    description: "Your return is the measure of our success.",
     icon: "trending-up",
   },
 ];
@@ -131,83 +139,71 @@ export const VALUES: Value[] = [
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: 1,
-    title: "Initial Consultation",
+    title: "Discover",
     description:
-      "We meet with clients to understand project scope, budget, timeline, and technical requirements.",
+      "We start with your goal and the site. We test feasibility, model the numbers, and confirm the project pencils before you commit.",
   },
   {
     number: 2,
-    title: "Scope & Proposal",
+    title: "Design",
     description:
-      "Our team prepares a detailed scope of work and proposal tailored to your project's specific needs.",
+      "Our team turns the feasibility into buildable drawings, coordinating architecture and engineering together and pressure-testing every choice against real cost and schedule.",
   },
   {
     number: 3,
-    title: "Design Development",
+    title: "Entitle",
     description:
-      "Engineers develop MEP design documents using current software and coordinated with all disciplines.",
+      "We move the project through zoning, permitting, and environmental review, managing the agencies so approvals don't derail the timeline.",
   },
   {
     number: 4,
-    title: "Review & Coordination",
+    title: "Build",
     description:
-      "A rigorous double-review process ensures error-free plans and proper coordination with all project stakeholders.",
+      "The same team that designed the project builds it, controlling budget, schedule, quality, and safety in the field.",
   },
   {
     number: 5,
-    title: "Delivery & Support",
+    title: "Deliver",
     description:
-      "Final documents are delivered on time and our team remains available for clarifications through construction.",
+      "We close out cleanly, commission the building, and hand you an asset that's ready to open — then stay available for what comes next.",
   },
 ];
 
 export const DIFFERENTIATORS: Differentiator[] = [
   {
-    id: "speed",
-    heading: "Why We're Faster",
-    subheading: "Speed",
+    id: "one-team",
+    heading: "One Team, Start to Finish",
+    subheading: "Integration",
     description:
-      "CDI operates 20 hours a day across offices in California, New Jersey, and Vietnam. While competitors are limited to an 8-hour workday, we span multiple time zones to dramatically reduce turnaround times and keep your projects on schedule.",
-    imageAlt: "CDI fast project delivery process",
+      "One team carries the project from acquisition through occupancy — the building you approve on paper is the building we hand you at completion, with nothing lost in the handoffs.",
+    imageAlt: "One team from acquisition through occupancy",
     imagePosition: "right",
   },
   {
-    id: "responsiveness",
-    heading: "How We Stay Responsive",
-    subheading: "Responsiveness",
+    id: "under-one-roof",
+    heading: "Design and Construction Under One Roof",
+    subheading: "Coordination",
     description:
-      "Dedicated MEP project managers serve as consistent client contacts throughout the life of every project. This single point of contact facilitates smooth communication, eliminates information gaps, and ensures streamlined workflows from kickoff to delivery.",
-    imageAlt: "CDI project management responsiveness",
+      "Because the people who design a project and the people who build it answer to the same team, budgets are set on reality instead of hope, and decisions get made faster.",
+    imageAlt: "Design and construction under a single roof",
     imagePosition: "left",
   },
   {
-    id: "accuracy",
-    heading: "Why We're More Accurate",
-    subheading: "Accuracy",
+    id: "accountable",
+    heading: "One Point of Accountability",
+    subheading: "Ownership",
     description:
-      "Our rigorous double-review process involves both project management and senior engineering professionals on every deliverable. This multi-layer quality control ensures error-free plans and proper MEP coordination with all other project disciplines.",
-    imageAlt: "CDI accuracy and quality review process",
+      "A single point of accountability for budget, schedule, and outcome — decisions made in Discovery are honored all the way through Delivery.",
+    imageAlt: "A single point of accountability for budget, schedule, and outcome",
     imagePosition: "right",
   },
 ];
 
 export const OFFICES: Office[] = [
   {
-    city: "Irvine, California",
-    address: "9890 Research Dr. Suite 100, Irvine, CA 92618",
-    phone: "949-336-6636",
-    email: "dkang@cdieng.com",
+    city: "City of Industry, California",
+    address: "1201 John Reed Ct., City of Industry, CA 91745",
     country: "USA (HQ)",
-  },
-  {
-    city: "Edison, New Jersey",
-    address: "Edison, NJ",
-    country: "USA",
-  },
-  {
-    city: "Ho Chi Minh City",
-    address: "Floor 3 – 65 Tran Nao, An Khanh Ward, Thu Duc City, HCMC",
-    country: "Vietnam",
   },
 ];
 
@@ -216,89 +212,57 @@ export const PROJECT_CATEGORIES: ProjectCategory[] = [
     slug: "commercial",
     label: "Commercial",
     description:
-      "Office buildings, retail spaces, restaurants, hotels, and mixed-use developments across the United States.",
-    projects: [
-      { id: "c1", title: "Office Complex — Irvine, CA", location: "Irvine, CA", category: "commercial", description: "Full MEP design for a 4-story Class-A office building." },
-      { id: "c2", title: "Retail Center Renovation", location: "Los Angeles, CA", category: "commercial", description: "Complete HVAC and electrical upgrade for a 120,000 sq ft retail center." },
-      { id: "c3", title: "Hotel Tower — Las Vegas, NV", location: "Las Vegas, NV", category: "commercial", description: "MEP engineering services for a 22-story hotel and convention facility." },
-      { id: "c4", title: "Restaurant Group Rollout", location: "Various, CA", category: "commercial", description: "Standardized MEP template design deployed across 30+ restaurant locations." },
-      { id: "c5", title: "Corporate Campus", location: "San Jose, CA", category: "commercial", description: "Energy-efficient MEP systems for a 250,000 sq ft tech campus." },
-      { id: "c6", title: "Mixed-Use Development", location: "San Diego, CA", category: "commercial", description: "Integrated MEP coordination for a residential and retail mixed-use tower." },
-    ],
+      "Office, retail, and mixed-use developments — from ground-up construction to repositioning and tenant improvements — designed to perform for owners and tenants alike.",
+    projects: [],
   },
   {
     slug: "residential",
-    label: "Residential / ADU",
+    label: "Residential & ADU",
     description:
-      "Single-family homes, multi-family developments, and accessory dwelling unit designs for residential clients.",
-    projects: [
-      { id: "r1", title: "Luxury Residence — Newport Beach", location: "Newport Beach, CA", category: "residential", description: "Custom MEP design for a 6,000 sq ft luxury single-family home." },
-      { id: "r2", title: "ADU Statewide Program", location: "California", category: "residential", description: "Streamlined MEP design package for accessory dwelling units." },
-      { id: "r3", title: "Multi-Family Complex", location: "Anaheim, CA", category: "residential", description: "Plumbing and electrical design for a 48-unit apartment complex." },
-      { id: "r4", title: "Townhome Community", location: "Riverside, CA", category: "residential", description: "MEP systems for a 60-unit townhome development." },
-    ],
+      "Multifamily, condominium, infill, and accessory dwelling unit projects that add housing while meeting the demands of California's zoning and design standards.",
+    projects: [],
   },
   {
-    slug: "cannabis",
-    label: "Cannabis",
+    slug: "mixed-use",
+    label: "Mixed-Use & Adaptive Reuse",
     description:
-      "Specialized MEP engineering for licensed cannabis cultivation, processing, and dispensary facilities.",
-    projects: [
-      { id: "ca1", title: "Cultivation Facility — Desert", location: "Coachella Valley, CA", category: "cannabis", description: "High-precision HVAC and humidity control for indoor cultivation." },
-      { id: "ca2", title: "Dispensary Build-Out", location: "Los Angeles, CA", category: "cannabis", description: "Full MEP build-out for a state-licensed cannabis dispensary." },
-      { id: "ca3", title: "Processing & Distribution Center", location: "Sacramento, CA", category: "cannabis", description: "Industrial MEP design for a cannabis processing and distribution hub." },
-      { id: "ca4", title: "Greenhouse Complex", location: "Santa Barbara, CA", category: "cannabis", description: "Hybrid greenhouse MEP systems for year-round cannabis production." },
-    ],
+      "Underused commercial buildings and infill sites reimagined as vibrant residential and mixed-use assets, turning obsolete space into new value.",
+    projects: [],
   },
   {
     slug: "industrial",
     label: "Industrial",
     description:
-      "Warehouses, manufacturing plants, distribution centers, and specialized industrial facility designs.",
-    projects: [
-      { id: "i1", title: "Distribution Center", location: "Ontario, CA", category: "industrial", description: "Mechanical and electrical systems for a 500,000 sq ft logistics facility." },
-      { id: "i2", title: "Food Processing Plant", location: "Fresno, CA", category: "industrial", description: "Specialized plumbing and HVAC for FDA-compliant food processing." },
-      { id: "i3", title: "Cold Storage Warehouse", location: "Long Beach, CA", category: "industrial", description: "Refrigeration and MEP systems for a large-scale cold storage facility." },
-      { id: "i4", title: "Manufacturing Facility", location: "Torrance, CA", category: "industrial", description: "Full MEP engineering for an advanced electronics manufacturing plant." },
-    ],
+      "Warehouse, light industrial, and logistics facilities built for operators and tenants, with an emphasis on speed to occupancy and long-term flexibility.",
+    projects: [],
   },
   {
-    slug: "photovoltaic",
-    label: "Photovoltaic",
+    slug: "hospitality",
+    label: "Hospitality & Retail",
     description:
-      "Solar photovoltaic system design and engineering for commercial, industrial, and utility-scale installations.",
-    projects: [
-      { id: "pv1", title: "Rooftop Solar — Office Campus", location: "Irvine, CA", category: "photovoltaic", description: "1.2 MW rooftop solar array design for a corporate campus." },
-      { id: "pv2", title: "Ground-Mount Solar Farm", location: "Riverside County, CA", category: "photovoltaic", description: "5 MW ground-mount photovoltaic installation." },
-      { id: "pv3", title: "Carport Solar Array", location: "Los Angeles, CA", category: "photovoltaic", description: "Solar carport system providing shading and clean energy generation." },
-      { id: "pv4", title: "Industrial Solar + Storage", location: "San Bernardino, CA", category: "photovoltaic", description: "PV and battery storage system for an industrial manufacturing facility." },
-    ],
+      "Guest-facing and destination projects where design quality and execution directly drive the return.",
+    projects: [],
+  },
+  {
+    slug: "land",
+    label: "Land Development",
+    description:
+      "Raw and entitled land taken through planning, entitlement, and vertical delivery — unlocking sites from opportunity to finished project.",
+    projects: [],
   },
 ];
 
-export const CLIENT_NAMES = [
-  "Honeywell International",
-  "B/E Aerospace",
-  "Cushman & Wakefield",
-  "CBRE Group",
-  "JLL",
-  "Hines",
-  "Lennar Corporation",
-  "KB Home",
-  "Marriott International",
-  "Hilton Hotels",
-  "Whole Foods Market",
-  "Target Corporation",
-];
+// No client logos/testimonials supplied yet — see clients page for the placeholder state.
+export const CLIENT_NAMES: string[] = [];
 
 export const COMPANY_INFO = {
-  name: "Circa Domini International Inc.",
-  shortName: "CDI Engineering",
-  tagline: "Fast, Affordable and Reliable MEP Experts",
+  name: "Tian Chen Development Group",
+  shortName: "Tian Chen Development Group",
+  tagline: "Integrated real estate development — from first drawing to finished building.",
   mission:
-    "Circa Domini International Inc. is an Irvine, California-based MEP engineering design and consulting firm. With innovation at our core, we deliver maximum value within budget — coast to coast and internationally.",
-  phone: "949-336-6636",
-  email: "dkang@cdieng.com",
-  address: "9890 Research Dr. Suite 100, Irvine, CA 92618",
-  founded: "2010",
+    "Tian Chen Development Group is a full-cycle real estate development firm that takes projects the entire distance: feasibility, design, entitlements, and construction, delivered by one accountable team. Where most projects lose time and money in the handoffs between planners, designers, and builders, we own every phase in sequence — so the building you approve on paper is the building we hand you at completion.",
+  phone: "",
+  email: "",
+  address: "1201 John Reed Ct., City of Industry, CA 91745",
+  founded: "",
 };

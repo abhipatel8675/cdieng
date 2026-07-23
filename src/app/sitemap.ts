@@ -1,7 +1,8 @@
 import type { MetadataRoute } from "next";
 import { PROJECT_CATEGORIES } from "@/lib/constants";
 
-const BASE_URL = "https://cdieng.com";
+// Placeholder domain — update once the real domain is confirmed.
+const BASE_URL = "https://tianchendevelopment.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -18,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/cdi`,
+      url: `${BASE_URL}/company`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
