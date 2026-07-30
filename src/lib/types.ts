@@ -61,6 +61,7 @@ export interface Project {
   location: string;
   category: string;
   description: string;
+  image?: string;
 }
 
 export interface ContactFormData {

@@ -37,8 +37,18 @@ export default async function CategoryPage({ params }: Props) {
           <div className="space-y-12">
             {cat.projects.map((project) => (
               <article key={project.id} className="border-b border-gray-100 pb-12">
-                {/* Image placeholder */}
-                <div className="w-full h-64 bg-gray-200 mb-6" role="img" aria-label={project.title} />
+                {/* Image */}
+                {project.image ? (
+                  <div className="w-full h-[360px] relative overflow-hidden mb-6 bg-gray-100 rounded-lg">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-full h-64 bg-gray-200 mb-6 rounded-lg" role="img" aria-label={project.title} />
+                )}
                 <h2 className="text-lg font-bold text-gray-900 mb-2">{project.title}</h2>
                 <p className="text-gray-500 text-xs mb-2">{project.location}</p>
                 <p className="text-gray-700 text-sm leading-relaxed">{project.description}</p>

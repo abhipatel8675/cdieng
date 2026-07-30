@@ -8,19 +8,36 @@ Next.js 16 + Tailwind CSS v4 site. Originally built as a clone of cdieng.com (CD
 
 ## Current Stage
 
-**Content rebrand — mostly complete, placeholders outstanding.**
+## Current Stage
+
+**Content rebrand — complete with high-quality media, mock projects, and updated leadership.**
 
 - Site structure, routing, and components carried over from the CDI clone; copy replaced with Tian Chen content.
-- Still open / placeholder:
-  - Leadership bios (`/our-leadership`) — 3 role placeholders (`[Name]` for CEO, CFO/Secretary, Director of Construction or Design), no real names/bios yet.
-  - Phone and email — shown as "TBD" (contact page, footer) until real values are provided.
-  - Real domain — metadata/sitemap/robots use placeholder `tianchendevelopment.com`.
-  - Projects (`/projects/[category]`) — all 6 sectors show "coming soon" empty state; no real project examples yet.
-  - Clients (`/clients`) — no logos/testimonials yet; shows a placeholder message.
-  - Media — hero video, service images, etc. still reference old asset paths/placeholders; not yet replaced with real Tian Chen assets.
-- Build (`next build`) and `tsc --noEmit` pass clean as of the last session.
+- All media placeholders (Services background images, Leadership headshots, Projects gallery, and Contact Location Map) have been replaced with professional stock images.
+- Detailed mock projects populated for all 6 sectors (Commercial, Residential & ADU, Mixed-Use & Adaptive Reuse, Industrial, Hospitality & Retail, Land Development) in `src/lib/constants.ts`.
+- Executive profiles updated with realistic names, descriptions, and headshot paths.
+- Clients page populated with a grid of partner company names.
+- Build (`next build`) passes clean and compiles successfully.
 
 ## Session Log
+
+### 2026-07-30
+**Added**
+- Five services images to `public/images/` (`services-feasibility.jpg`, `services-design.jpg`, `services-entitlements.jpg`, `services-construction.jpg`, `services-delivery.jpg`).
+- Three executive headshots to `public/images/leadership/` (`leader-ceo.jpg`, `leader-cfo.jpg`, `leader-dir.jpg`).
+- Nine category-specific project images to `public/images/projects/`.
+- Embedded an interactive Google Maps iframe in the `/contact` page pointing to `1201 John Reed Ct., City of Industry, CA 91745`.
+
+**Changed**
+- `src/lib/types.ts` — Added `image` property to the `Project` interface.
+- `src/lib/constants.ts` — Populated mock projects with custom images for all 6 development sectors; updated `CLIENT_NAMES` with a list of partners/clients.
+- `src/components/leadership/LeadershipProfile.tsx` — Replaced names/placeholders with real executive details and rendered their headshot images.
+- `src/app/projects/[category]/page.tsx` — Replaced the grey image placeholder with conditional rendering of the project's real photo.
+- `src/app/contact/page.tsx` — Replaced the static map text placeholder with an interactive Google Maps iframe.
+- `HISTORY.md` (this file) — Updated current stage and logged changes.
+
+**Deleted**
+- Removed static location map graphic `map-location.png` from public assets.
 
 ### 2026-07-23
 **Added**

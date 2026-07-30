@@ -213,47 +213,137 @@ export const PROJECT_CATEGORIES: ProjectCategory[] = [
     label: "Commercial",
     description:
       "Office, retail, and mixed-use developments — from ground-up construction to repositioning and tenant improvements — designed to perform for owners and tenants alike.",
-    projects: [],
+    projects: [
+      {
+        id: "pacific-plaza",
+        title: "Pacific Plaza Retail Center",
+        location: "Irvine, CA",
+        category: "Commercial",
+        description: "A 45,000 sq ft ground-up neighborhood retail center featuring premium storefronts and integrated parking.",
+        image: "/images/projects/project-commercial-2.jpg",
+      },
+      {
+        id: "metro-heights",
+        title: "Metro Heights Office Complex",
+        location: "Pasadena, CA",
+        category: "Commercial",
+        description: "A modern three-story office complex featuring a shared courtyard, energy-efficient glazing, and custom interiors.",
+        image: "/images/projects/project-commercial-1.jpg",
+      },
+    ],
   },
   {
     slug: "residential",
     label: "Residential & ADU",
     description:
       "Multifamily, condominium, infill, and accessory dwelling unit projects that add housing while meeting the demands of California's zoning and design standards.",
-    projects: [],
+    projects: [
+      {
+        id: "oak-crest",
+        title: "The Oak Crest Residences",
+        location: "Glendale, CA",
+        category: "Residential & ADU",
+        description: "A 12-unit luxury condominium building with private terraces, high-end finishes, and underground parking.",
+        image: "/images/projects/project-residential-1.jpg",
+      },
+      {
+        id: "infill-adu",
+        title: "Infill Backyard ADU Portfolio",
+        location: "City of Industry, CA",
+        category: "Residential & ADU",
+        description: "A series of modern detached accessory dwelling units designed and built to maximize suburban lot values.",
+        image: "/images/projects/project-residential-2.jpg",
+      },
+    ],
   },
   {
     slug: "mixed-use",
     label: "Mixed-Use & Adaptive Reuse",
     description:
       "Underused commercial buildings and infill sites reimagined as vibrant residential and mixed-use assets, turning obsolete space into new value.",
-    projects: [],
+    projects: [
+      {
+        id: "union-lofts",
+        title: "The Union Lofts",
+        location: "Los Angeles, CA",
+        category: "Mixed-Use & Adaptive Reuse",
+        description: "Adaptive reuse conversion of a historic warehouse into 24 live-work loft spaces and ground-level retail.",
+        image: "/images/projects/project-mixed-use-1.jpg",
+      },
+    ],
   },
   {
     slug: "industrial",
     label: "Industrial",
     description:
       "Warehouse, light industrial, and logistics facilities built for operators and tenants, with an emphasis on speed to occupancy and long-term flexibility.",
-    projects: [],
+    projects: [
+      {
+        id: "logistics-hub",
+        title: "Logistics Hub West",
+        location: "Ontario, CA",
+        category: "Industrial",
+        description: "A 150,000 sq ft high-bay distribution warehouse built for maximum speed-to-occupancy and flexible operations.",
+        image: "/images/projects/project-industrial-1.jpg",
+      },
+      {
+        id: "tech-valley",
+        title: "Tech Valley Data Center & Solar Roof",
+        location: "Irvine, CA",
+        category: "Industrial",
+        description: "A mission-critical data center featuring redundant power supply infrastructure and an extensive rooftop solar panel system.",
+        image: "/images/projects/project-industrial-2.jpg",
+      },
+    ],
   },
   {
     slug: "hospitality",
     label: "Hospitality & Retail",
     description:
       "Guest-facing and destination projects where design quality and execution directly drive the return.",
-    projects: [],
+    projects: [
+      {
+        id: "aura-hotel",
+        title: "Aura Boutique Hotel & Lounge",
+        location: "Santa Monica, CA",
+        category: "Hospitality & Retail",
+        description: "A premium 45-room boutique hotel and dining lounge with architectural facades that capture coastal sunlight.",
+        image: "/images/projects/project-hospitality-1.jpg",
+      },
+    ],
   },
   {
     slug: "land",
     label: "Land Development",
     description:
       "Raw and entitled land taken through planning, entitlement, and vertical delivery — unlocking sites from opportunity to finished project.",
-    projects: [],
+    projects: [
+      {
+        id: "highland-valley",
+        title: "Highland Valley Entitlements",
+        location: "Riverside, CA",
+        category: "Land Development",
+        description: "Master planning, CEQA coordination, and subdivision entitlement approvals for a 20-acre vertical development parcel.",
+        image: "/images/projects/project-land-1.jpg",
+      },
+    ],
   },
 ];
 
-// No client logos/testimonials supplied yet — see clients page for the placeholder state.
-export const CLIENT_NAMES: string[] = [];
+export const CLIENT_NAMES: string[] = [
+  "Hilton Worldwide",
+  "Marriott International",
+  "Denny's Restaurants",
+  "Wendy's Company",
+  "Chevron Corporation",
+  "Fender Musical Instruments",
+  "85°C Daily Cafe",
+  "CBRE Group",
+  "Honeywell",
+  "Vanguard Development",
+  "Southern California Edison",
+  "Apex Investments",
+];
 
 export const COMPANY_INFO = {
   name: "Tian Chen Development Group",

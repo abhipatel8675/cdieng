@@ -30,13 +30,20 @@ export default function ContactPage() {
               Phone: {COMPANY_INFO.phone || "TBD"} | Email: {COMPANY_INFO.email || "TBD"}
             </p>
           </div>
-          {/* Map placeholder */}
+          {/* Map */}
           <div
-            className="h-64 bg-gray-100 border border-gray-200 flex items-center justify-center"
-            aria-label="Office location map"
-            role="img"
+            className="h-64 bg-gray-100 border border-gray-200 overflow-hidden relative rounded-lg"
           >
-            <p className="text-gray-400 text-sm">Map — {COMPANY_INFO.address}</p>
+            <iframe
+              src="https://maps.google.com/maps?q=1201%20John%20Reed%20Ct.,%20City%20of%20Industry,%20CA%2091745&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              title="Google Map showing Tian Chen Development Group HQ"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
 
