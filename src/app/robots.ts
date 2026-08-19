@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/"],
       },
     ],
-    sitemap: "https://tianchendevelopment.com/sitemap.xml",
+    sitemap: "https://tianchengdevelopment.com/sitemap.xml",
   };
 }

@@ -4,9 +4,7 @@ Running log of what this project is, what stage it's in, and what changed each s
 
 ## Project
 
-Next.js 16 + Tailwind CSS v4 site. Originally built as a clone of cdieng.com (CDI Engineering, an MEP firm). As of 2026-07-23 the content has been fully repointed to **Tian Chen Development Group**, an integrated real estate development firm (feasibility, design, entitlements, construction, delivery), based on `Tian-Chen-Development-Group-Website-Content.docx`.
-
-## Current Stage
+Next.js 16 + Tailwind CSS v4 site. Originally built as a clone of cdieng.com (CDI Engineering, an MEP firm). As of 2026-07-23 the content has been fully repointed to **TianCheng Development Group**, an integrated real estate development firm (feasibility, design, entitlements, construction, delivery), based on `Tian-Chen-Development-Group-Website-Content.docx`.
 
 ## Current Stage
 
@@ -20,6 +18,14 @@ Next.js 16 + Tailwind CSS v4 site. Originally built as a clone of cdieng.com (CD
 - Build (`next build`) passes clean and compiles successfully.
 
 ## Session Log
+
+### 2026-08-19
+**Changed**
+- Renamed the company to "TianCheng Development Group" across all files.
+- Captured all spellings of "Tian Chen" and changed them to "TianCheng" (including descriptions, names, headers, bios, sitemaps, and layout metadata).
+- Replaced the placeholder email address with `TianChengDevelopment@gmail.com`.
+- Removed phone contact rendering from the website (Footer and Contact Page).
+- Updated sitemaps, robots, and metadata base URLs to `tianchengdevelopment.com`.
 
 ### 2026-07-30
 **Added**

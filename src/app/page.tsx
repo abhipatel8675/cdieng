@@ -7,12 +7,12 @@ import { COMPANY_INFO } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `${COMPANY_INFO.shortName} — ${COMPANY_INFO.tagline}`,
   description:
-    "Tian Chen Development Group is a Southern California-based integrated real estate development firm carrying projects from feasibility through construction and delivery.",
+    "TianCheng Development Group is a Southern California-based integrated real estate development firm carrying projects from feasibility through construction and delivery.",
   openGraph: {
     title: `${COMPANY_INFO.shortName} — ${COMPANY_INFO.tagline}`,
     description:
       "Integrated real estate development — from first drawing to finished building. One accountable team from acquisition through occupancy.",
-    url: "https://tianchendevelopment.com",
+    url: "https://tianchengdevelopment.com",
   },
 };
 

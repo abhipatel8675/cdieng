@@ -346,13 +346,13 @@ export const CLIENT_NAMES: string[] = [
 ];
 
 export const COMPANY_INFO = {
-  name: "Tian Chen Development Group",
-  shortName: "Tian Chen Development Group",
+  name: "TianCheng Development Group",
+  shortName: "TianCheng Development Group",
   tagline: "Integrated real estate development — from first drawing to finished building.",
   mission:
-    "Tian Chen Development Group is a full-cycle real estate development firm that takes projects the entire distance: feasibility, design, entitlements, and construction, delivered by one accountable team. Where most projects lose time and money in the handoffs between planners, designers, and builders, we own every phase in sequence — so the building you approve on paper is the building we hand you at completion.",
+    "TianCheng Development Group is a full-cycle real estate development firm that takes projects the entire distance: feasibility, design, entitlements, and construction, delivered by one accountable team. Where most projects lose time and money in the handoffs between planners, designers, and builders, we own every phase in sequence — so the building you approve on paper is the building we hand you at completion.",
   phone: "",
-  email: "",
+  email: "TianChengDevelopment@gmail.com",
   address: "1201 John Reed Ct., City of Industry, CA 91745",
   founded: "",
 };

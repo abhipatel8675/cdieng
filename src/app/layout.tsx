@@ -18,13 +18,13 @@ const onest = Onest({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://tianchendevelopment.com"),
+  metadataBase: new URL("https://tianchengdevelopment.com"),
   title: {
     default: `${COMPANY_INFO.shortName} — ${COMPANY_INFO.tagline}`,
     template: `%s | ${COMPANY_INFO.shortName}`,
   },
   description:
-    "Tian Chen Development Group is a Southern California-based integrated real estate development firm delivering feasibility, design, entitlements, and construction under one accountable team.",
+    "TianCheng Development Group is a Southern California-based integrated real estate development firm delivering feasibility, design, entitlements, and construction under one accountable team.",
   keywords: [
     "real estate development",
     "integrated development",

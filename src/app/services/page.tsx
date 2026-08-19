@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Tian Chen Development Group carries projects through feasibility, design, entitlements, construction, and delivery — one accountable team, start to finish.",
+    "TianCheng Development Group carries projects through feasibility, design, entitlements, construction, and delivery — one accountable team, start to finish.",
 };
 
 export default function ServicesPage() {

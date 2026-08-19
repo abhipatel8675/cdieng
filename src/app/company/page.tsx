@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Company",
   description:
-    "Tian Chen Development Group is an integrated real estate development firm based in Southern California. Learn about our mission, values, and approach.",
+    "TianCheng Development Group is an integrated real estate development firm based in Southern California. Learn about our mission, values, and approach.",
 };
 
 export default function CompanyPage() {
@@ -14,7 +14,7 @@ export default function CompanyPage() {
       <div className="max-w-[960px] mx-auto px-6 py-12">
 
         {/* About Us */}
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">About — Tian Chen Development Group</h2>
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">About — TianCheng Development Group</h2>
         <p className="text-gray-700 text-sm leading-relaxed max-w-3xl">
           We are an integrated real estate development firm built on a simple idea: the people who design a
           project and the people who build it should answer to the same team.
@@ -25,7 +25,7 @@ export default function CompanyPage() {
           scope. Intent gets lost in the gaps, costs drift, and the owner is left holding the risk.
         </p>
         <p className="text-gray-700 text-sm leading-relaxed max-w-3xl mt-4">
-          Tian Chen Development Group was formed to close those gaps. We carry projects from raw opportunity
+          TianCheng Development Group was formed to close those gaps. We carry projects from raw opportunity
           through completed asset, keeping design, entitlement, and construction under one roof and one line of
           accountability. That integration lets us set budgets on reality instead of hope, make decisions faster,
           and deliver buildings that match what was promised.

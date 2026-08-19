@@ -7,7 +7,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Our Process",
   description:
-    "One continuous pipeline, not a chain of vendors. See how Tian Chen Development Group moves a project through discovery, design, entitlement, construction, and delivery.",
+    "One continuous pipeline, not a chain of vendors. See how TianCheng Development Group moves a project through discovery, design, entitlement, construction, and delivery.",
 };
 
 export default function OurProcessPage() {

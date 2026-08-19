@@ -5,7 +5,7 @@ import { COMPANY_INFO } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Have a site, a building, or an idea? Get in touch with Tian Chen Development Group in City of Industry, CA.",
+    "Have a site, a building, or an idea? Get in touch with TianCheng Development Group in City of Industry, CA.",
 };
 
 export default function ContactPage() {
@@ -24,10 +24,10 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {/* Address */}
           <div className="flex flex-col justify-center">
-            <p className="text-gray-700 text-sm mb-1">Tian Chen Development Group</p>
+            <p className="text-gray-700 text-sm mb-1">TianCheng Development Group</p>
             <p className="text-gray-700 text-sm mb-1">{COMPANY_INFO.address}</p>
             <p className="text-gray-500 text-sm mt-2">
-              Phone: {COMPANY_INFO.phone || "TBD"} | Email: {COMPANY_INFO.email || "TBD"}
+              Email: {COMPANY_INFO.email || "TBD"}
             </p>
           </div>
           {/* Map */}
@@ -41,7 +41,7 @@ export default function ContactPage() {
               style={{ border: 0 }}
               allowFullScreen={true}
               loading="lazy"
-              title="Google Map showing Tian Chen Development Group HQ"
+              title="Google Map showing TianCheng Development Group HQ"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>

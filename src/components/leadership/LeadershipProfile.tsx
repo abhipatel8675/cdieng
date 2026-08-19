@@ -11,7 +11,7 @@ const PRINCIPALS = [
     name: "Sarah Johnston",
     title: "Chief Financial Officer / Secretary",
     image: "/images/leadership/leader-cfo.jpg",
-    bio: "Sarah manages the financial operations, project capitalization, and investor relations for Tian Chen. With a background in institutional real estate finance, she structures capital for projects from feasibility through post-occupancy delivery.",
+    bio: "Sarah manages the financial operations, project capitalization, and investor relations for TianCheng. With a background in institutional real estate finance, she structures capital for projects from feasibility through post-occupancy delivery.",
   },
   {
     initials: "DIR",
@@ -26,7 +26,7 @@ export default function LeadershipProfile() {
   return (
     <div>
       <p className="text-gray-600 text-sm leading-relaxed max-w-3xl mb-10">
-        Tian Chen Development Group is led by a team that has taken projects from land to lease-up across
+        TianCheng Development Group is led by a team that has taken projects from land to lease-up across
         design, entitlement, and construction.
       </p>
 

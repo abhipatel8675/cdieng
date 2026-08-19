@@ -7,7 +7,7 @@ export default function Footer() {
         <p className="text-gray-300 text-sm mb-1 font-semibold">{COMPANY_INFO.name}</p>
         <p className="text-gray-300 text-sm mb-1">{COMPANY_INFO.address}</p>
         <p className="text-gray-300 text-sm">
-          Phone: {COMPANY_INFO.phone || "TBD"} | Email: {COMPANY_INFO.email || "TBD"}
+          Email: {COMPANY_INFO.email || "TBD"}
         </p>
       </div>
     </footer>

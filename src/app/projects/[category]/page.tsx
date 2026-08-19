@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${cat.label} Projects`,
-    description: `Tian Chen Development Group ${cat.label} project sector. ${cat.description}`,
+    description: `TianCheng Development Group ${cat.label} project sector. ${cat.description}`,
   };
 }
 

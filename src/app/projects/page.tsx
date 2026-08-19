@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Tian Chen Development Group develops across sectors — commercial, residential & ADU, mixed-use & adaptive reuse, industrial, hospitality & retail, and land development.",
+    "TianCheng Development Group develops across sectors — commercial, residential & ADU, mixed-use & adaptive reuse, industrial, hospitality & retail, and land development.",
 };
 
 export default function ProjectsPage() {

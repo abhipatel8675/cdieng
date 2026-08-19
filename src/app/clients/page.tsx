@@ -4,7 +4,7 @@ import ClientsShowcase from "@/components/clients/ClientsShowcase";
 export const metadata: Metadata = {
   title: "Clients",
   description:
-    "Tian Chen Development Group partners with property owners, private investors, real estate funds, business owners, and landholders across Southern California.",
+    "TianCheng Development Group partners with property owners, private investors, real estate funds, business owners, and landholders across Southern California.",
 };
 
 export default function ClientsPage() {
@@ -18,7 +18,7 @@ export default function ClientsPage() {
             We work with the people who carry the risk on a development — and we treat their capital like our own.
           </p>
           <p className="text-gray-700 text-sm leading-relaxed">
-            Tian Chen Development Group partners with property owners, private investors, real estate funds,
+            TianCheng Development Group partners with property owners, private investors, real estate funds,
             business owners, and landholders across Southern California. Our clients come to us when they want a
             single team accountable for the entire project rather than a stack of separate consultants and
             contractors.
